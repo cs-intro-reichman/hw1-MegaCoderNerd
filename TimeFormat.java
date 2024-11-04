@@ -16,21 +16,21 @@ public class TimeFormat {
 		String amPMStr = "";
 		String status = "";
 		// am or pm check using hours greater then 12 as pm and the reverse for am
-		if (hours > 12)
-		{
+		if (hours > 12){
 			amPMStr += (hours-12);
 			status = "pm";
 		}
-		else
-		{
+		else{
 			amPMStr += hours;
 			status = "am";
 		}
 		// putting a leading 0 where needed (when the minutes are a single digit)
-		if (minutes < 10)
-			amPMStr+=":0"+minutes+" "+status;
-		else
-			amPMStr+=":"+minutes+" "+status;
+		if (minutes < 10){
+			amPMStr += ":0"+minutes+" "+status;
+		}
+		else{
+			amPMStr += ":"+minutes+" "+status;
+		}
 		System.out.println("Converted time is: " + amPMStr);
 	}
 }
