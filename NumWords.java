@@ -7,8 +7,8 @@ public class NumWords {
 		// this specifically just counts all the hundreds by ignoring the remainder
 		String hundreds = number/100+" hundreds";
 
-		// the division due to it being an integer operation gets rid of the unit digit 
-		// and leaves only the tens digit
+		/* the division due to it being an integer operation gets rid of the unit digit 
+		and leaves only the tens digit*/
 		String tens = (number%100)/10+" tens";
 		
 		// leaves only the tens and units thus by modulo of 10 we get just the units
