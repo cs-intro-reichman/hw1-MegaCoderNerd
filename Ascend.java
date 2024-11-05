@@ -2,7 +2,7 @@
 // and prints them in increasing order.
 public class Ascend {
 	public static void main(String[] args) {
-		// defining 3 variables to random values in the range of 0 - 10000
+		// defining 3 variables to random values in the range of 0 - 10000 Not including 10000
 		int a = (int)(Math.random() * 10000);
 		int b = (int)(Math.random() * 10000);
 		int c = (int)(Math.random() * 10000);
