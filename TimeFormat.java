@@ -18,11 +18,11 @@ public class TimeFormat {
 		// am or pm check using hours greater then 12 as pm and the reverse for am
 		if (hours > 12){
 			amPMStr += (hours-12);
-			status = "pm";
+			status = "PM";
 		}
 		else{
 			amPMStr += hours;
-			status = "am";
+			status = "AM";
 		}
 		// putting a leading 0 where needed (when the minutes are a single digit)
 		if (minutes < 10){
@@ -31,6 +31,7 @@ public class TimeFormat {
 		else{
 			amPMStr += ":"+minutes+" "+status;
 		}
-		System.out.println("Converted time is: " + amPMStr);
+		//System.out.println("Converted time is: " + amPMStr);
+		System.out.println(amPMStr);
 	}
 }
