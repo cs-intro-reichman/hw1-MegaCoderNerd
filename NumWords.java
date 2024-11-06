@@ -12,8 +12,8 @@ public class NumWords {
 		String tens = (number%100)/10+" tens";
 		
 		// leaves only the tens and units thus by modulo of 10 we get just the units
-		String units = (number%100)%10+" units";
-		System.out.println(hundreds+" "+tens+" "+units);
+		String units = (number%100)%10+" ones.";
+		System.out.println(hundreds+", "+tens+", and"+units);
 		
 	}
 }

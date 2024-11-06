@@ -20,6 +20,10 @@ public class TimeFormat {
 			amPMStr += (hours-12);
 			status = "PM";
 		}
+		else if (hours == 12){
+			amPMStr += hours;
+			status = "PM";
+		}
 		else{
 			amPMStr += hours;
 			status = "AM";
