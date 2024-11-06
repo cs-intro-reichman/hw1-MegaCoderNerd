@@ -12,6 +12,29 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
-        // Replace this comment with the rest of your code
+
+		String amPMStr = "";
+		String status = "";
+		// am or pm check using hours greater then 12 as pm and the reverse for am
+		if (hours > 12){
+			amPMStr += (hours-12);
+			status = "PM";
+		}
+		else if (hours == 12){
+			amPMStr += hours;
+			status = "PM";
+		}
+		else{
+			amPMStr += hours;
+			status = "AM";
+		}
+		// putting a leading 0 where needed (when the minutes are a single digit)
+		if (minutes < 10){
+			amPMStr += ":0"+minutes+" "+status;
+		}
+		else{
+			amPMStr += ":"+minutes+" "+status;
+		}
+		System.out.println(amPMStr);
 	}
 }
