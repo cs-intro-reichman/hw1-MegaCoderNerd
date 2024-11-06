@@ -9,7 +9,7 @@ public class Bill3 {
 		// I converted the arg to integer and did a decimal division and rounding
 		double billPerPerson =  Integer.parseInt(args[3]) / 3.0;
 		billPerPerson = Math.ceil(billPerPerson);
-	    System.out.println("Dear " + name3 +", "+ name2 + " and " +name1+": pay " + 
+	    System.out.println("Dear " + name3 +", "+ name2 + ", and " +name1+": pay " + 
 			billPerPerson + " Shekels each");
 	}
 }

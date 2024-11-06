@@ -10,7 +10,7 @@ public class FVCalc {
 		/* simple casting and string formatting 
 		*(there are multiple ways I just chose this one
 		to each their own)*/
-		System.out.println("After " +(int) years+ " years, a"+currentValue+
-			"$ saved at "+rate+"% will yield " +((int) futureValue)+ "$");
+		System.out.println("After " +(int) years+ " years, a $"+currentValue+
+			" saved at "+rate+"% will yield $" +((int) futureValue));
 	}
 }
