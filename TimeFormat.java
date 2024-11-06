@@ -35,7 +35,6 @@ public class TimeFormat {
 		else{
 			amPMStr += ":"+minutes+" "+status;
 		}
-		//System.out.println("Converted time is: " + amPMStr);
 		System.out.println(amPMStr);
 	}
 }
